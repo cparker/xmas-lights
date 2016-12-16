@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>xmas lights</title>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-touch.min.js"></script>
+    </head>
+
+    <body ng-app="xmas-lights" ng-controller="mainCtrl">
+        <script src="code.js"></script>
+        <div class="buttons">
+            <div class="button" ng-class="{transition:buttons.outsideTree === 'transition', on:buttons.outsideTree === 'on', off:buttons.outsideTree === 'off'}" ng-click="click('outsideTree')">
+                <div class="text">outside tree</div>
+            </div>
+            <div class="button" ng-class="{transition:buttons.shelf === 'transition', on:buttons.shelf === 'on', off:buttons.shelf === 'off'}" ng-click="click('shelf')">
+                <div class="text">shelf</div>
+            </div>
+            <div class="button" ng-class="{transition:buttons.insideTree === 'transition', on:buttons.insideTree === 'on', off:buttons.insideTree === 'off'}" ng-click="click('insideTree')">
+                <div class="text">inside tree</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+html {
+  height:100%;
+  font-family: 'Baloo Thambi', cursive;
+  margin:0;
+}
+
+body {
+  height:100%;
+  margin:0;
+}
+.buttons {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.text {
+  font-size:9vh;
+  color:white;
+
+}
+
+.button {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  margin:2px;
+  flex:1;
+}
+
+.on {
+  background-color:green;
+}
+
+.off {
+  background-color:red;
+}
+
+.transition {
+  background-color:gray;
+}
